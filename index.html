@@ -5,30 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boolando</title>
     <link rel="stylesheet" href="./style/style.css">
+    <!-- Font-awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
 </head>
 <body>
-    
     <header>
         <section class="container header-flex">
-            <div>
                 <ul class="flex">
                     <li>Donna</li>
                     <li>Uomo</li>
                     <li>Bambini</li>
                 </ul>
-            </div>
             <img class="logo" src="./img/boolean-logo.png" alt="boolean-logo">
             <div>
-                <i>Profile</i>
-                <i>Heart</i>
-                <i>bag</i>
+                <i class="fa-solid fa-user"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-bag-shopping"></i>    
             </div>
         </section>
     </header>
 
-    <main class="container flex">
-            <!-- ROW 1 -->
-        <section class="row">
+    <!-- Row 1 - Card 1 -->
+    <main>
+        <section class="container row">
             <article class="cards p-relative">
                 <img class="default-image" src="./img/1.webp" alt="first-man-levi's">
                 <img class="hover-image" src="./img/1b.webp" alt="change img">
@@ -41,43 +41,87 @@
                 <h5>RELAXED FIT TEE UNISEX</h5>
                 <span class="color-red">14,99 €</span><span class="line-throungh"> 29,99 €</span>
             </article>
-
+                <!-- Row 1 - Card 2 -->
             <article class="cards p-relative">
+                <img class="default-image" src="./img/2.webp" alt="first-man-levi's">
+                <img class="hover-image" src="./img/2b.webp" alt="change img">
                 <span class="icon-hearts p-absolute">&hearts;</span>
-                <img src="./img/2.webp" alt="first-woman-guess">
-                <span class="sale p-absolute">-30%</span>
-
+                <div class="p-absolute">
+                    <span class="sale">-30%</span>
+                </div>
+                <span>Guess</span>
+                <h5>ROSES TEE</h5>
+                <span class="color-red">20,99 €</span><span class="line-throungh"> 29,99 €</span>
             </article>
-
-
+                <!-- Row 1 - Card 3 -->
             <article class="cards p-relative">
+                <img class="default-image" src="./img/3.webp" alt="first-man-levi's">
+                <img class="hover-image" src="./img/3b.webp" alt="change img">
                 <span class="icon-hearts p-absolute">&hearts;</span>
-                <img src="./img/3.webp" alt="second-woman-green">
-                <span class="sale p-absolute">-30%</span>
+                <div class="p-absolute">
+                    <span class="sale">-30%</span>
+                </div>
+                <span>Come Zucchero filato</span>
+                <h5>VOGLIA DI COLORI PASTELLO</h5>
+                <span class="color-red">129,99 €</span><span class="line-throungh"> 184,99 €</span>
             </article>
         </section>
-        ROW 2
+                <!-- Row 2 - Card 4 --->
         <section class="row">
             <article class="cards p-relative">
+                <img class="default-image" src="./img/4.webp" alt="first-man-levi's">
+                <img class="hover-image" src="./img/4b.webp" alt="change img">
                 <span class="icon-hearts p-absolute">&hearts;</span>
-                <img src="./img/4.webp" alt="second-man-levi's">
-                <span class="sale p-absolute">-50%</span>
+                <div class="p-absolute">
+                    <span class="sale">-50%</span>
+                    <span class="opportunity">Sostenibilità</span>
+                </div>
+                <span>Levi's</span>
+                <h5>TEE UNISEX</h5>
+                <span class="color-red">14,99 €</span><span class="line-throungh"> 29,99 €</span>
             </article>
-
+                <!-- Row 2 - Card 5 -->
             <article class="cards p-relative">
+                <img class="default-image" src="./img/5.webp" alt="first-man-levi's">
+                <img class="hover-image" src="./img/5b.webp" alt="change img">
                 <span class="icon-hearts p-absolute">&hearts;</span>
-                <img src="./img/5.webp" alt="third-woman-dress-brown">
+                <span>Maya Deluxe</span>
+                <h5>STRIPE BODICE</h5>
+                <span class="color-red">99,99 €</span>
             </article>
-
+                <!-- Row 2 - Card 6 -->
             <article class="cards p-relative">
+                <img class="default-image" src="./img/6.webp" alt="first-man-levi's">
+                <img class="hover-image" src="./img/6b.webp" alt="change img">
                 <span class="icon-hearts p-absolute">&hearts;</span>
-                <img src="./img/6.webp" alt="fourth-woman-dress-black">
-                <span class="sale p-absolute">-50%</span>
+                <div class="p-absolute">
+                    <span class="opportunity">Sostenibilità</span>
+                </div>
+                <span>Espirit</span>
+                <h5>MAGLIONE - BLACK</h5>
+                <span class="color-red">29,99 €</span>
             </article>
         </section>
-
     </main>
-
-
+    <footer class="flex">
+        <section class="container footer-flex">
+            <div>
+                <h3>Boolando s.r.l.</h3>
+                <span>Informazioni legali</span>
+                <span>Informativa sulla privacy</span>
+                <span>Diritto di recesso</span>
+            </div>
+            <div>
+                <span>Trovaci anche su</span>
+                <div class="icon">
+                    <i class="fa-brands fa-square-twitter"></i>
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+        </section>
+    </footer>
 </body>
 </html>

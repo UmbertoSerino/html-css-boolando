@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid black;
+    /* border: 1px solid white;     */
 }
 
 /* Section HEADER */
@@ -10,16 +10,17 @@
 header{
     background-color: #FF6800;
     color: white;
-    position: fixed;
+    position: absolute;
     width: 100%;
     z-index: 1;
+    position: fixed;
+    top: 0;
 }
 
-.header-flex{
+header .header-flex{
     display: flex;
-    align-items: center;
     justify-content: space-between;
-
+    align-items: center;
 }
 
 .flex{
@@ -28,30 +29,34 @@ header{
     flex-wrap: wrap;
 }
 
-header section.container{
+header > section.container{
     width: 70%;
     margin: auto;
     padding: 1rem 0;
+
 }
 
 section.container img.logo{
     height: 30px;
 }
 
-li{
+header section.container li{
     list-style-type: none;
-    padding-left: 2rem;
+    padding-right: 1.3rem;
 }
 
+header div i{
+padding-right: 0.5rem;
+}
 /* Section MAIN */
 
 main{
     width: 70%;
-    margin: 5rem auto;
-    
+    margin: 0 auto;
+    margin-top: 4rem;
 }
 
-main.container img{
+main .container img{
     height: 100%;
 }
 
@@ -60,7 +65,7 @@ article.p-relative{
     position: relative;
 }
 
-.p-absoulute{
+.p-absolute{
     position: absolute;
 }
 
@@ -98,29 +103,42 @@ div.p-absolute{
 
 }
 
-span.sale{
+main span.color-red{
+    color: red;
+    font-weight: bold;
+}
+
+article span.sale{
     background-color: red;
     color: white;
     font-weight: bold;
-    height: 25px;
+    height: 30px;
     width: 60px;
     text-align: center;
     font-size: 1.1rem;
+    line-height: 30px;
+    vertical-align: middle; 
+    display: inline-block;
 }
 
-.opportunity{
+article span.opportunity{
     background-color: green;
     color: white;
     font-weight: bold;
-    height: 25px;
+    height: 30px;
     width: 100px;
     text-align: center;
     font-size: 1.1rem;
+    display: inline-block;
+    line-height: 30px;
+    vertical-align: middle;
 }
 
 .line-throungh{
     text-decoration: line-through;
 }
+
+/* Change image */
 
 .cards .hover-image{
     display: none;
@@ -132,4 +150,37 @@ span.sale{
 
 .cards:hover .hover-image{
     display: block;
+}
+
+/* Footer */
+
+footer{
+    width: 100%;
+    margin: 0 auto;
+    height: 100px;
+    background-color: #1A1A1A;
+    color: white;
+}
+
+.footer-flex
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}   
+
+footer section.container{
+    width: 70%;
+    margin: auto;
+    padding: 1rem 0;
+}
+
+footer span{
+    font-size: .7rem;
+    padding-right: .5rem;
+}
+
+footer div.icon{
+    margin-top: .5rem;
 }
