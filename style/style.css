@@ -9,7 +9,10 @@
 header{
     background-color: #FF6800;
     color: white;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+    /* position: fixed; */
+    width: 100%;
+    z-index: 1;
     
 }
 
@@ -21,12 +24,13 @@ header{
 
 .flex{
     display: flex;
+    justify-content: center;
 }
 
 section.container{
-height: 60px;
-width: 80%;
-margin: auto;
+    width: 70%;
+    margin: auto;
+    padding: 1rem 0;
 }
 
 section.container img.logo{
@@ -38,4 +42,22 @@ li{
     padding-left: 2rem;
 }
 
-main
+main section.container img{
+    height: 400px;
+    padding-left: 1.5rem;
+}
+
+article.position-relative{
+    position: relative;
+}
+
+span.position-absolute{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
