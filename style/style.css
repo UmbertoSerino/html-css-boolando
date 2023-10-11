@@ -10,7 +10,7 @@
 header{
     background-color: #FF6800;
     color: white;
-    /* position: fixed; */
+    position: fixed;
     width: 100%;
     z-index: 1;
 }
@@ -19,7 +19,6 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 3rem;
 
 }
 
@@ -48,7 +47,8 @@ li{
 
 main{
     width: 70%;
-    margin: 0 auto;
+    margin: 5rem auto;
+    
 }
 
 main.container img{
@@ -92,10 +92,13 @@ span.icon-hearts{
     font-size: 1.5rem;
 }
 
-span.sale.p-absolute{
+div.p-absolute{
     position: absolute;
-    bottom: 40px;
-    left: 0;
+    bottom: 80px;
+
+}
+
+span.sale{
     background-color: red;
     color: white;
     font-weight: bold;
@@ -103,4 +106,30 @@ span.sale.p-absolute{
     width: 60px;
     text-align: center;
     font-size: 1.1rem;
+}
+
+.opportunity{
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    height: 25px;
+    width: 100px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.line-throungh{
+    text-decoration: line-through;
+}
+
+.cards .hover-image{
+    display: none;
+}
+
+.cards:hover .default-image{
+    display: none;
+}
+
+.cards:hover .hover-image{
+    display: block;
 }
