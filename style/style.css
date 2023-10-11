@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header{
+    background-color: orange;
+}
+
+section.container{
+height: 30px;
+width: 80%;
+margin: auto;
+}
+
