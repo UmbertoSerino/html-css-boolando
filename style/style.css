@@ -6,20 +6,36 @@
 }
 
 
-.flex{
+header{
+    background-color: #FF6800;
+    color: white;
+    margin-bottom: 2rem;
+    
+}
+
+.header-flex{
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
-header{
-    background-color: orange;
+.flex{
+    display: flex;
 }
 
 section.container{
-height: 30px;
+height: 60px;
 width: 80%;
 margin: auto;
 }
 
+section.container img.logo{
+    height: 30px;
+}
+
+li{
+    list-style-type: none;
+    padding-left: 2rem;
+}
+
+main
